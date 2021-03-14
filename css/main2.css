@@ -1,0 +1,274 @@
+.section1 {
+  padding-top: 70px;
+  width: 100%;
+  height: 340px;
+  position: relative;
+  z-index: 0;
+  background-image: url("../img/img17.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  padding-top: 70px;
+}
+
+.contenido {
+  width: 85%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.contenido__h1 {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.9rem;
+  font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 25px;
+}
+.contenido__p {
+  color: white;
+  font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+.contenido__icon {
+  color: white;
+  text-align: center;
+  font-size: 2.4rem;
+  animation: despla 2s infinite;
+}
+@keyframes despla {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.section2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.6rem;
+  color: #333333;
+}
+
+.galeria {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.galeria__item {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.galeria__item:nth-child(1) {
+  background-image: url("../img/playa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(2) {
+  background-image: url("../img/sahara.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(3) {
+  background-image: url("../img/antartida.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(4) {
+  background-image: url("../img/amazonas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(5) {
+  background-image: url("../img/img5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(6) {
+  background-image: url("../img/canon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(7) {
+  background-image: url("../img/africa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(8) {
+  background-image: url("../img/img17.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(9) {
+  background-image: url("../img/cataratas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(10) {
+  background-image: url("../img/bambu.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(11) {
+  background-image: url("../img/ruinas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__item:nth-child(12) {
+  background-image: url("../img/tanzania.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.galeria__small {
+  color: white;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 57%;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 500px) {
+  .section1 {
+    padding-top: 70px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 0;
+    background-image: url("../img/img17.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .section1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    padding-top: 70px;
+  }
+
+  .galeria {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .galeria__item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 950px) {
+  .contenido {
+    width: 45%;
+    height: auto;
+  }
+  .contenido__h1 {
+    font-size: 3rem;
+  }
+  .contenido__icon {
+    color: white;
+    text-align: center;
+    font-size: 2.8rem;
+    animation: despla 1s infinite;
+  }
+  @keyframes despla {
+    0% {
+      transform: translateY(15px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+  }
+
+  .section2 {
+    margin-bottom: 40px;
+  }
+
+  .h3 {
+    font-size: 2.9rem;
+  }
+
+  .galeria {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .galeria__item {
+    width: 30%;
+    margin: 10px;
+  }
+}
+.clase {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in;
+}
+
+.clase2 {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/*# sourceMappingURL=main2.css.map */

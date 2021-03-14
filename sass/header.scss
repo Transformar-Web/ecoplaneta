@@ -1,0 +1,241 @@
+@import '_variables.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// Mobile First -> este codigo empieza con la metodologia dispositivos mobiles primeros
+
+body{
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: $bg-white1;
+    position: relative;
+}
+
+.header-container{
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    z-index: 100;
+}
+
+// barra del nav
+.nav{
+    width: 100%;
+    height: 70px;
+    background-color: $bg-white1;
+    color: white;
+    display: flex;
+    box-shadow: 3px 0 5px gray;
+    
+    position: fixed;
+    top: 0;
+    padding: 0;
+
+    &__logo{
+        font-size: 1.7rem;
+        font-weight: bold;
+        margin: 0 10px;
+
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__imgLogo{
+      width: 220px;
+      height: 40px;
+      object-fit: cover;
+    }
+
+    &__menu{
+        width: 50%;
+       
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+ 
+    &__icon{
+        font-size: 2.5rem;
+        margin: 0 20px;
+        color: #333333; 
+        cursor: pointer;
+    }
+    &__icon:hover{
+      font-size: 2.6rem;
+      transition: .2s ease-in;
+    }
+}
+// codigo final del nav
+// ...................................................................
+
+// mostrar el menu y sus diferentes enlaces
+.mostrar{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    z-index: 10;
+    background-color: $bg-dark1;
+    visibility: hidden;
+    transition: .5s ease-in;
+    
+    &__contIcon{
+        display: flex;
+        justify-content: flex-end;
+        background: linear-gradient(60deg,$bg-blue,$bg-green3);
+    }
+
+    &__iconClose{
+        font-size: 2.2rem;
+        margin: 10px 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    &__iconClose:hover{
+        color: $bg-dark2;
+        transition: .2s ease-in;
+      }
+
+    &__lista{
+        width: 100%;
+        height: auto;
+    }
+
+    &__enlace{
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__enlace:hover{
+        color: $bg-green;
+    }
+
+    &__fa{
+        padding-right: 10px;
+        font-size: 1.3rem;
+    }
+
+}
+//...........................................................
+// ..........................................................
+
+// clase que nosotros manipulamos con javascript
+.menu-active{
+    visibility: visible;
+    right: 0;
+}
+
+
+ 
+// media querie -> se adapta a dispositivos tablets
+
+@media screen and (min-width:500px){
+  
+    .nav{
+    position: fixed;
+    top: 0;
+    padding: 0;
+
+        &__logo{
+            font-size: 1.7rem;
+            font-weight: bold;
+            margin: 0 10px;
+    
+            width: 50%;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__imgLogo{
+            width: 305px;
+            height: 55px;
+            object-fit: cover;
+          }
+
+          &__icon{
+            font-size: 2.5rem;
+            margin: 0 25px;
+            color: #333333; 
+            cursor: pointer;
+        }
+    }
+    
+    .mostrar{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 40%;
+        height: 100vh;
+        z-index: 10;
+        background-color: $bg-dark1;
+        visibility: hidden;
+        transition: .8s ease;
+
+        &__enlace{
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        
+    }
+    
+    .menu-active{
+        visibility: visible;
+        right: 0;
+    }
+    
+
+}
+
+// media querie -> se adapta a dispositivos Desktop
+
+@media screen and (min-width:950px){
+    .mostrar{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 23%;
+        height: 100vh;
+        z-index: 10;
+        background-color: $bg-dark1;
+        visibility: hidden;
+        transition: .8s ease;
+
+        &__enlace{
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            display: block;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            font-weight: bold;
+        }
+
+        
+    }
+    
+    .menu-active{
+        visibility: visible;
+        right: 0;
+    }
+}

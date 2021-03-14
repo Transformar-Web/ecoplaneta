@@ -1,0 +1,77 @@
+.section1 {
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  margin-bottom: 60px;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.content__contentIMG {
+  width: 100%;
+  margin: 20px 0;
+}
+.content__svg {
+  width: 100%;
+  height: 300px;
+}
+.content__contentText {
+  width: 100%;
+  height: auto;
+}
+.content__h1 {
+  text-align: center;
+  font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.2rem;
+  color: #333333;
+}
+.content__p {
+  text-align: center;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 500px) {
+  .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .content__h1 {
+    font-size: 2.6rem;
+  }
+  .content__p {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 950px) {
+  .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .content__h1 {
+    font-size: 3rem;
+  }
+  .content__p {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    font-size: 19px;
+  }
+}
+
+/*# sourceMappingURL=main3.css.map */
