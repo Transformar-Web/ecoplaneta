@@ -98,6 +98,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 25px 0;
     
 
     &__item{
@@ -111,13 +112,14 @@
     &__item:nth-child(3){@include backgroundImage("../img/antartida.jpg");}
     &__item:nth-child(4){@include backgroundImage("../img/amazonas.jpg");}
     &__item:nth-child(5){@include backgroundImage("../img/img5.jpg");}
-    &__item:nth-child(6){@include backgroundImage("../img/canon.jpg");}
+    &__item:nth-child(6){@include backgroundImage("../img/Canon.jpg");}
     &__item:nth-child(7){@include backgroundImage("../img/africa.jpg");}
     &__item:nth-child(8){@include backgroundImage("../img/img17.jpg");}
     &__item:nth-child(9){@include backgroundImage("../img/cataratas.jpg");}
     &__item:nth-child(10){@include backgroundImage("../img/bambu.jpg");}
     &__item:nth-child(11){@include backgroundImage("../img/ruinas.jpg");}
     &__item:nth-child(12){@include backgroundImage("../img/tanzania.jpg");}
+
 
 
     &__small{

@@ -87,6 +87,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 25px 0;
 }
 .galeria__item {
   width: 100%;
@@ -125,7 +126,7 @@
   background-position: center;
 }
 .galeria__item:nth-child(6) {
-  background-image: url("../img/canon.jpg");
+  background-image: url("../img/Canon.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

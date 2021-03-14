@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", Verdana, Geneva, Tsassahoma, sans-serif;
   background-color: #ffffff;
   position: relative;
 }
@@ -31,18 +31,17 @@ body {
   font-size: 1.7rem;
   font-weight: bold;
   margin: 0 10px;
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .nav__imgLogo {
-  width: 220px;
+  width: 100%;
   height: 40px;
-  object-fit: cover;
 }
 .nav__menu {
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -137,6 +136,9 @@ body {
     margin: 0 25px;
     color: #333333;
     cursor: pointer;
+  }
+  .nav__menu {
+    width: 50%;
   }
 
   .mostrar {
